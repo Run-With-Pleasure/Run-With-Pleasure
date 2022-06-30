@@ -6,9 +6,10 @@
 //
 
 struct User {
+    
     let login: String
     let password: String
-    let person: Person
+    var person: Person
     
     static func createUser() -> User {
         User(
@@ -19,10 +20,12 @@ struct User {
                 lastname: "",
                 age: 0,
                 sex: "",
-                distance: 0.0
+                distance: 0.0,
+                photo: "usainBolt"
             )
         )
     }
+    
 }
 
 struct Person {
@@ -31,6 +34,11 @@ struct Person {
     var age: Int
     var sex: String
     var distance: Double
+    let photo: String
+    
+    var fullName: String {
+    "\(name) \(lastname)"
+    }
 }
 
 
