@@ -225,6 +225,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Save">
                                             <fontDescription key="titleFontDescription" type="system" weight="thin" pointSize="25"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Pzw-K1-WWE" kind="unwind" unwindAction="unwindFor:" id="Rfd-2i-L0f"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8a-0h-BcK">
                                         <rect key="frame" x="0.0" y="56" width="96" height="44"/>
@@ -233,6 +236,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Cancel">
                                             <fontDescription key="titleFontDescription" type="system" weight="thin" pointSize="25"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cancelButtonPressed" destination="g3H-Yz-KtZ" eventType="touchUpInside" id="n4V-Tp-7vO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -276,8 +282,15 @@
                             <constraint firstItem="Scm-cX-fIg" firstAttribute="top" secondItem="Jjb-bH-9rM" secondAttribute="bottom" constant="40" id="vXt-Lt-VB4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="atV-up-ThJ" id="dpk-dQ-3kS"/>
+                        <outlet property="lastNameTextField" destination="bnA-bx-0Vk" id="ijj-Pr-Y9V"/>
+                        <outlet property="nameTextField" destination="anj-Yd-6j2" id="reY-JW-Poi"/>
+                        <outlet property="sexTextField" destination="c0g-aD-gL3" id="kPq-6a-qRW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9o9-lA-Pav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Pzw-K1-WWE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1793" y="2902"/>
         </scene>

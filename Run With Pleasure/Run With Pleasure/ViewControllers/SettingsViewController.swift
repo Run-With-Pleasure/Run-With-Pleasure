@@ -9,13 +9,27 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var lastNameTextField: UITextField!
+    @IBOutlet var ageTextField: UITextField!
+    @IBOutlet var sexTextField: UITextField!
+    
+    var person: Person!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
 
     }
     
-
+    
+    
+    @IBAction func cancelButtonPressed() {
+        dismiss(animated: true)
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 

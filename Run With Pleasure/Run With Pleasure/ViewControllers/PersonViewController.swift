@@ -15,7 +15,7 @@ class PersonViewController: UIViewController {
     @IBOutlet var distanceLabel: UILabel!
     
     
-    var user: User!
+    var person: Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,17 +24,28 @@ class PersonViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let settingsVC = segue.destination as? SettingsViewController else { return }
+        settingsVC.person = person
+    }
+    
     func updateInfo() {
-        photoView.image = UIImage(named: user.person.photo)
-        ageLabel.text = "Your age is \(user.person.age)"
-        sexLabel.text = "Your sex is \(user.person.sex)"
-        distanceLabel.text = "You've run \(user.person.distance) km"
+        photoView.image = UIImage(named: person.photo)
+        ageLabel.text = "Your age is \(person.age)"
+        sexLabel.text = "Your sex is \(person.sex)"
+        distanceLabel.text = "You've run \(person.distance) km"
         
-        if user.person.fullName == " " {
+        if person.fullName == " " {
             navigationItem.title = "Hello, runer!"
         } else {
-            navigationItem.title = "Hello, \(user.person.fullName)!"
+            navigationItem.title = "Hello, \(person.fullName)!"
         }
+    }
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        guard let settingsVC = segue.source as? SettingsViewController else { return }
+        person = settingsVC.person
+        updateInfo()
     }
     
 }

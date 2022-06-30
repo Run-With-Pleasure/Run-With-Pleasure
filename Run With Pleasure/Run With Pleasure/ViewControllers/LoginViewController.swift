@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
         for viewController in viewControllers {
             guard let navigationVC = viewController as? UINavigationController else { return }
             guard let personVC = navigationVC.topViewController as? PersonViewController else { return }
-            personVC.user = user
+            personVC.person = user.person
         }
     }
     
