@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BA0EBD9286E1EBD0067165C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0EBD8286E1EBD0067165C /* User.swift */; };
 		A9CB6E60286D4C6F00F7D440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CB6E5F286D4C6F00F7D440 /* AppDelegate.swift */; };
 		A9CB6E62286D4C6F00F7D440 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CB6E61286D4C6F00F7D440 /* SceneDelegate.swift */; };
 		A9CB6E64286D4C6F00F7D440 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CB6E63286D4C6F00F7D440 /* LoginViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8BA0EBD8286E1EBD0067165C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A9CB6E5C286D4C6F00F7D440 /* Run With Pleasure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Run With Pleasure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CB6E5F286D4C6F00F7D440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9CB6E61286D4C6F00F7D440 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8BA0EBDA286E1EC60067165C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BA0EBD8286E1EBD0067165C /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A9CB6E53286D4C6F00F7D440 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,7 @@
 			children = (
 				E624023F286D75E700EECF2D /* ViewControllers */,
 				E624023E286D75DB00EECF2D /* Storyboards */,
+				8BA0EBDA286E1EC60067165C /* Models */,
 				E624023D286D75D400EECF2D /* App */,
 				E6240240286D762D00EECF2D /* Resourses */,
 			);
@@ -190,6 +201,7 @@
 				E6240246286D767C00EECF2D /* RoutesListViewController.swift in Sources */,
 				A9CB6E60286D4C6F00F7D440 /* AppDelegate.swift in Sources */,
 				A9CB6E62286D4C6F00F7D440 /* SceneDelegate.swift in Sources */,
+				8BA0EBD9286E1EBD0067165C /* User.swift in Sources */,
 				E624024A286D76A000EECF2D /* DevelopersInfoViewController.swift in Sources */,
 				E6240242286D765000EECF2D /* CityListViewController.swift in Sources */,
 				E6240248286D769100EECF2D /* RouteInfoViewController.swift in Sources */,
