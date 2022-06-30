@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8BA0EBD9286E1EBD0067165C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0EBD8286E1EBD0067165C /* User.swift */; };
+		8BA0EBDE286E3CC90067165C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0EBDD286E3CC90067165C /* SettingsViewController.swift */; };
 		A9CB6E60286D4C6F00F7D440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CB6E5F286D4C6F00F7D440 /* AppDelegate.swift */; };
 		A9CB6E62286D4C6F00F7D440 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CB6E61286D4C6F00F7D440 /* SceneDelegate.swift */; };
 		A9CB6E64286D4C6F00F7D440 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CB6E63286D4C6F00F7D440 /* LoginViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		8BA0EBD8286E1EBD0067165C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8BA0EBDD286E3CC90067165C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A9CB6E5C286D4C6F00F7D440 /* Run With Pleasure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Run With Pleasure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CB6E5F286D4C6F00F7D440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9CB6E61286D4C6F00F7D440 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				E6240241286D765000EECF2D /* CityListViewController.swift */,
 				E6240245286D767C00EECF2D /* RoutesListViewController.swift */,
 				E6240247286D769100EECF2D /* RouteInfoViewController.swift */,
+				8BA0EBDD286E3CC90067165C /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				E6240244286D766A00EECF2D /* PersonViewController.swift in Sources */,
 				A9CB6E64286D4C6F00F7D440 /* LoginViewController.swift in Sources */,
 				E6240246286D767C00EECF2D /* RoutesListViewController.swift in Sources */,
+				8BA0EBDE286E3CC90067165C /* SettingsViewController.swift in Sources */,
 				A9CB6E60286D4C6F00F7D440 /* AppDelegate.swift in Sources */,
 				A9CB6E62286D4C6F00F7D440 /* SceneDelegate.swift in Sources */,
 				8BA0EBD9286E1EBD0067165C /* User.swift in Sources */,
