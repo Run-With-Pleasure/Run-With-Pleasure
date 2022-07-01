@@ -28,15 +28,14 @@ class RouteInfoViewController: UIViewController {
         
         routeOnMap.image = UIImage(named: route.title)
         routeDescription.text = route.description
-        routeDistance.text = "Дистанция маршрута – \(route.distance)"
+        routeDistance.text = "Дистанция маршрута – \(route.distance) (м)"
         routeDificulty.text = "Сложность маршрута – \(route.dificulty)"
         routeDuration.text = "Длительность – \(route.duration)"
         routeWithChild.text = "С детьми – \(route.withChild)"
         routeMobileNetwork.text = "Мобильная связь – \(route.mobileNetwork)"
     }
     
-    @IBAction func letsRunButtonPressed() {
-        print("pressed")
+    private func showAnimation() {
         letsRunButton.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
         
         UIView.animate(withDuration: 2.0,
@@ -51,4 +50,23 @@ class RouteInfoViewController: UIViewController {
         )
     }
     
+    private func showAlert() {
+        let refreshAlert = UIAlertController(title: "Внимание!", message: "Вы действительно хотите добавить маршрут \(route.title)?", preferredStyle: UIAlertController.Style.alert)
+
+        refreshAlert.addAction(UIAlertAction(title: "Да", style: .default, handler: { (action: UIAlertAction!) in
+              print("Handle Ok logic here")
+        }))
+
+        refreshAlert.addAction(UIAlertAction(title: "Нет", style: .cancel, handler: { (action: UIAlertAction!) in
+              print("Handle Cancel Logic here")
+        }))
+
+        present(refreshAlert, animated: true, completion: nil)
+    }
+    
+    @IBAction func letsRunButtonPressed() {
+        print("pressed")
+        showAnimation()
+        showAlert()
+    }
 }

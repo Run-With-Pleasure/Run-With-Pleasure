@@ -25,7 +25,7 @@ class RoutesListViewController: UITableViewController {
         
         
         content.text = routes[indexPath.row].title
-        content.secondaryText = routes[indexPath.row].dificulty
+        content.secondaryText = "Длительность – \(routes[indexPath.row].duration)"
         
         cell.contentConfiguration = content
         return cell
