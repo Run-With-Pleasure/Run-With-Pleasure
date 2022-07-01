@@ -138,15 +138,15 @@
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="hL8-sh-KSs">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="g3H-Yz-KtZ" kind="presentation" id="75n-RL-avH"/>
+                                <segue destination="Lrj-2t-0lV" kind="presentation" id="75n-RL-avH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="ageLabel" destination="TPU-mS-9kO" id="mbD-47-HpS"/>
                         <outlet property="distanceLabel" destination="nNG-FN-Y9f" id="KTS-Mg-xRA"/>
+                        <outlet property="heightLabel" destination="VIy-TT-a5e" id="gw4-ye-I7V"/>
                         <outlet property="photoView" destination="1ej-uV-lA3" id="gXe-xe-KcU"/>
-                        <outlet property="sexLabel" destination="VIy-TT-a5e" id="gw4-ye-I7V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7gO-0Q-EOc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -167,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="COp-pF-fN7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2535" y="3473"/>
+            <point key="canvasLocation" x="2535" y="3621"/>
         </scene>
         <!--City's list-->
         <scene sceneID="JVe-4M-o1b">
@@ -201,7 +201,7 @@
             </objects>
             <point key="canvasLocation" x="2535" y="2140"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="7Dc-kb-dbZ">
             <objects>
                 <viewController id="g3H-Yz-KtZ" customClass="SettingsViewController" customModule="Run_With_Pleasure" customModuleProvider="target" sceneMemberID="viewController">
@@ -210,40 +210,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert your info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhv-qZ-l5q">
-                                <rect key="frame" x="20" y="40" width="280" height="36"/>
+                                <rect key="frame" x="20" y="96" width="280" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Scm-cX-fIg">
-                                <rect key="frame" x="112" y="385" width="96" height="100"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toa-v8-ifa">
-                                        <rect key="frame" x="0.0" y="0.0" width="96" height="44"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Save">
-                                            <fontDescription key="titleFontDescription" type="system" weight="thin" pointSize="25"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="Pzw-K1-WWE" kind="unwind" unwindAction="unwindFor:" id="Rfd-2i-L0f"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8a-0h-BcK">
-                                        <rect key="frame" x="0.0" y="56" width="96" height="44"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Cancel">
-                                            <fontDescription key="titleFontDescription" type="system" weight="thin" pointSize="25"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="cancelButtonPressed" destination="g3H-Yz-KtZ" eventType="touchUpInside" id="n4V-Tp-7vO"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="Jjb-bH-9rM">
-                                <rect key="frame" x="40" y="116" width="240" height="229"/>
+                                <rect key="frame" x="40" y="172" width="240" height="229"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="anj-Yd-6j2">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
@@ -260,7 +233,7 @@
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sex" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c0g-aD-gL3">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Height" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c0g-aD-gL3">
                                         <rect key="frame" x="0.0" y="195" width="240" height="34"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -276,23 +249,34 @@
                             <constraint firstItem="Jjb-bH-9rM" firstAttribute="centerX" secondItem="byK-Cm-wnQ" secondAttribute="centerX" id="AFq-Hd-bOL"/>
                             <constraint firstItem="Jjb-bH-9rM" firstAttribute="leading" secondItem="Cfx-tB-SNE" secondAttribute="leading" constant="40" id="b4d-0x-IXK"/>
                             <constraint firstItem="Fhv-qZ-l5q" firstAttribute="leading" secondItem="Cfx-tB-SNE" secondAttribute="leading" constant="20" id="dgs-AJ-O8h"/>
-                            <constraint firstItem="Scm-cX-fIg" firstAttribute="centerX" secondItem="byK-Cm-wnQ" secondAttribute="centerX" id="ghN-Tu-UHW"/>
                             <constraint firstItem="Cfx-tB-SNE" firstAttribute="trailing" secondItem="Fhv-qZ-l5q" secondAttribute="trailing" constant="20" id="qO3-k5-5eD"/>
                             <constraint firstItem="Cfx-tB-SNE" firstAttribute="trailing" secondItem="Jjb-bH-9rM" secondAttribute="trailing" constant="40" id="tBT-Jy-Udl"/>
-                            <constraint firstItem="Scm-cX-fIg" firstAttribute="top" secondItem="Jjb-bH-9rM" secondAttribute="bottom" constant="40" id="vXt-Lt-VB4"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Settings" id="kR9-DZ-icW">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="KSU-Yh-zSi">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="g3H-Yz-KtZ" id="bAD-KX-Hj9"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="QL8-r6-u6d">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="g3H-Yz-KtZ" id="yyh-D8-Ew7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="ageTextField" destination="atV-up-ThJ" id="dpk-dQ-3kS"/>
+                        <outlet property="heightTextField" destination="c0g-aD-gL3" id="Fjw-mn-jas"/>
                         <outlet property="lastNameTextField" destination="bnA-bx-0Vk" id="ijj-Pr-Y9V"/>
                         <outlet property="nameTextField" destination="anj-Yd-6j2" id="reY-JW-Poi"/>
-                        <outlet property="sexTextField" destination="c0g-aD-gL3" id="kPq-6a-qRW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9o9-lA-Pav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Pzw-K1-WWE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="2902"/>
+            <point key="canvasLocation" x="1793" y="3607"/>
         </scene>
         <!--Routes list-->
         <scene sceneID="XMH-xr-DNu">
@@ -324,7 +308,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JuK-Er-psf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2535" y="2804"/>
+            <point key="canvasLocation" x="2535" y="2879"/>
         </scene>
         <!--Developers Info View Controller-->
         <scene sceneID="RVc-cT-eLK">
@@ -418,6 +402,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCv-De-dav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2535" y="777"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hPc-Fa-coJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lrj-2t-0lV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="n4q-4G-oTt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="g3H-Yz-KtZ" kind="relationship" relationship="rootViewController" id="gkV-G2-Pe8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pf8-22-6yY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1792.5" y="2901.7605633802818"/>
         </scene>
     </scenes>
     <resources>

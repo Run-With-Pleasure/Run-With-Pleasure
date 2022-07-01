@@ -7,11 +7,15 @@
 
 import UIKit
 
+protocol SettingsViewControllerDelegate {
+    func setNewValue(for person: Person)
+}
+
 class PersonViewController: UIViewController {
 
     @IBOutlet var photoView: UIImageView!
     @IBOutlet var ageLabel: UILabel!
-    @IBOutlet var sexLabel: UILabel!
+    @IBOutlet var heightLabel: UILabel!
     @IBOutlet var distanceLabel: UILabel!
     
     
@@ -25,27 +29,29 @@ class PersonViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let settingsVC = segue.destination as? SettingsViewController else { return }
+        guard let navigationVC = segue.destination as? UINavigationController else { return }
+        guard let settingsVC = navigationVC.topViewController as? SettingsViewController else { return }
         settingsVC.person = person
+        settingsVC.delegate = self
     }
     
     func updateInfo() {
         photoView.image = UIImage(named: person.photo)
         ageLabel.text = "Your age is \(person.age)"
-        sexLabel.text = "Your sex is \(person.sex)"
+        heightLabel.text = "Your height is \(person.height) сm"
         distanceLabel.text = "You've run \(person.distance) km"
         
         if person.fullName == " " {
-            navigationItem.title = "Hello, runer!"
+            navigationItem.title = "Hello, runner!"
         } else {
             navigationItem.title = "Hello, \(person.fullName)!"
         }
     }
-    
-    @IBAction func unwind(for segue: UIStoryboardSegue) {
-        guard let settingsVC = segue.source as? SettingsViewController else { return }
-        person = settingsVC.person
+}
+
+extension PersonViewController: SettingsViewControllerDelegate {
+    func setNewValue(for person: Person) {
+        self.person = person
         updateInfo()
     }
-    
 }

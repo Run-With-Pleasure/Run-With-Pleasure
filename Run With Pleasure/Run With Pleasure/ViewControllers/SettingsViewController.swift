@@ -12,9 +12,10 @@ class SettingsViewController: UIViewController {
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var lastNameTextField: UITextField!
     @IBOutlet var ageTextField: UITextField!
-    @IBOutlet var sexTextField: UITextField!
+    @IBOutlet var  heightTextField: UITextField!
     
     var person: Person!
+    var delegate: SettingsViewControllerDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,26 +23,24 @@ class SettingsViewController: UIViewController {
         nameTextField.delegate = self
         lastNameTextField.delegate = self
         ageTextField.delegate = self
-        sexTextField.delegate = self
+        heightTextField.delegate = self
+        
+        nameTextField.text = person.name
+        lastNameTextField.text = person.lastname
+        ageTextField.text = String(person.age)
+        heightTextField.text = String(person.height)
     }
     
     
-    
-    @IBAction func cancelButtonPressed() {
+    @IBAction func saveButtonPressed(_ sender: Any) {
+        view.endEditing(true)
+        delegate.setNewValue(for: person)
         dismiss(animated: true)
     }
     
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func cancelButtonPressed(_ sender: Any) {
+        dismiss(animated: true)
     }
-    */
 
 }
 
@@ -76,14 +75,17 @@ extension SettingsViewController: UITextFieldDelegate {
             }
             person.age = Int(newValue) ?? 0
         } else {
-            if Float(newValue) != nil {
-                showAlert(with: "Incorrect value", and: "Please, enter your sex")
-                sexTextField.text = ""
+            guard let numberValue = Float(newValue), numberValue > 0 else {
+                showAlert(with: "Incorrect value", and: "Please, enter your height")
+                heightTextField.text = ""
                 return
-            } else {
-                person.sex = newValue
             }
+            person.height = Int(newValue) ?? 0
         }
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.text = ""
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
