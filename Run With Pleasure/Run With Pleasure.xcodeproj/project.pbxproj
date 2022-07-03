@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		294CEC83286DD5DD00F1E256 /* UsersDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CEC82286DD5DD00F1E256 /* UsersDataManager.swift */; };
+		294CEC85286DD6A300F1E256 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CEC84286DD6A300F1E256 /* User.swift */; };
 		A9CB6E60286D4C6F00F7D440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CB6E5F286D4C6F00F7D440 /* AppDelegate.swift */; };
 		A9CB6E62286D4C6F00F7D440 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CB6E61286D4C6F00F7D440 /* SceneDelegate.swift */; };
 		A9CB6E64286D4C6F00F7D440 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CB6E63286D4C6F00F7D440 /* LoginViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		294CEC82286DD5DD00F1E256 /* UsersDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDataManager.swift; sourceTree = "<group>"; };
+		294CEC84286DD6A300F1E256 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A9CB6E5C286D4C6F00F7D440 /* Run With Pleasure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Run With Pleasure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CB6E5F286D4C6F00F7D440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9CB6E61286D4C6F00F7D440 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,8 @@
 		A9CB6E53286D4C6F00F7D440 = {
 			isa = PBXGroup;
 			children = (
+				294CEC84286DD6A300F1E256 /* User.swift */,
+				294CEC82286DD5DD00F1E256 /* UsersDataManager.swift */,
 				A9CB6E5E286D4C6F00F7D440 /* Run With Pleasure */,
 				A9CB6E5D286D4C6F00F7D440 /* Products */,
 			);
@@ -192,6 +198,8 @@
 				A9CB6E62286D4C6F00F7D440 /* SceneDelegate.swift in Sources */,
 				E624024A286D76A000EECF2D /* DevelopersInfoViewController.swift in Sources */,
 				E6240242286D765000EECF2D /* CityListViewController.swift in Sources */,
+				294CEC83286DD5DD00F1E256 /* UsersDataManager.swift in Sources */,
+				294CEC85286DD6A300F1E256 /* User.swift in Sources */,
 				E6240248286D769100EECF2D /* RouteInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

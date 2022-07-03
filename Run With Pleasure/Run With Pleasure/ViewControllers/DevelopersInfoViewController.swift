@@ -8,6 +8,8 @@
 import UIKit
 
 class DevelopersInfoViewController: UIViewController {
+    
+    var user: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()

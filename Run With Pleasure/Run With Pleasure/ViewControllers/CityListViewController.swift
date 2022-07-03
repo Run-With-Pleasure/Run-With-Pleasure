@@ -8,6 +8,8 @@
 import UIKit
 
 class CityListViewController: UITableViewController {
+    
+    var user: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()
