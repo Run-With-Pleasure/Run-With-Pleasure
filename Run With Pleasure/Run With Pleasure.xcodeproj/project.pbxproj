@@ -51,11 +51,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A9CB6E53286D4C6F00F7D440 = {
+		294CEC862871FFE500F1E256 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				294CEC82286DD5DD00F1E256 /* UsersDataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		294CEC872871FFF500F1E256 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				294CEC84286DD6A300F1E256 /* User.swift */,
-				294CEC82286DD5DD00F1E256 /* UsersDataManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A9CB6E53286D4C6F00F7D440 = {
+			isa = PBXGroup;
+			children = (
 				A9CB6E5E286D4C6F00F7D440 /* Run With Pleasure */,
 				A9CB6E5D286D4C6F00F7D440 /* Products */,
 			);
@@ -72,6 +86,8 @@
 		A9CB6E5E286D4C6F00F7D440 /* Run With Pleasure */ = {
 			isa = PBXGroup;
 			children = (
+				294CEC872871FFF500F1E256 /* Models */,
+				294CEC862871FFE500F1E256 /* Services */,
 				E624023F286D75E700EECF2D /* ViewControllers */,
 				E624023E286D75DB00EECF2D /* Storyboards */,
 				E624023D286D75D400EECF2D /* App */,
