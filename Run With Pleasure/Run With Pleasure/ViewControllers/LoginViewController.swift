@@ -12,10 +12,10 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userNameValueTF: UITextField!
     @IBOutlet weak var passwordValueTF: UITextField!
     
-    let user = User.getUser()
+    let user = User.createUser()
     
     @IBAction func logInPressedButton() {
-        if userNameValueTF.text == "\(user.username)" && passwordValueTF.text == "\(user.password)" {
+        if userNameValueTF.text == "\(user.login)" && passwordValueTF.text == "\(user.password)" {
             performSegue(withIdentifier: "goToPersonViewController", sender: nil)
         } else {
             showAlert(with: "Ошибка!", and: "Неверный Логин и/или Пароль!")
@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func forgotLoginPressedButton() {
-        showAlert(with: "Забыли логин?", and: "Ваш логин - \(user.username)")
+        showAlert(with: "Забыли логин?", and: "Ваш логин - \(user.login)")
     }
     
     @IBAction func forgotPasswordPressedButton() {

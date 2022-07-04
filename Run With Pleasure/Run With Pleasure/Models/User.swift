@@ -9,14 +9,36 @@ import Foundation
 
 struct User {
     
-    let username: String
+    let login: String
     let password: String
+    var person: Person
     
-    static func getUser() -> User {
+    static func createUser() -> User {
         User(
-            username: UsersDataManager.shared.username.first ?? "",
-            password: UsersDataManager.shared.password.first ?? "")
-        
+            login: "login",
+            password: "password",
+            person: Person(
+                name: "",
+                lastname: "",
+                age: 0,
+                height: 0,
+                distance: 0.0,
+                photo: "usainBolt"
+            )
+        )
     }
     
+}
+
+struct Person {
+    var name: String
+    var lastname: String
+    var age: Int
+    var height: Int
+    var distance: Double
+    let photo: String
+    
+    var fullName: String {
+    "\(name) \(lastname)"
+    }
 }
