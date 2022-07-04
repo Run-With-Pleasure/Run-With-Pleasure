@@ -51,7 +51,8 @@ extension SettingsViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         guard let newValue = textField.text else { return }
         
-        if textField == nameTextField {
+        switch textField {
+        case nameTextField:
             if Float(newValue) != nil {
                 showAlert(with: "Incorrect value", and: "Please, enter your name")
                 nameTextField.text = ""
@@ -59,7 +60,7 @@ extension SettingsViewController: UITextFieldDelegate {
             } else {
                 person.name = newValue
             }
-        } else if textField == lastNameTextField {
+        case lastNameTextField:
             if Float(newValue) != nil {
                 showAlert(with: "Incorrect value", and: "Please, enter your lastname")
                 lastNameTextField.text = ""
@@ -67,15 +68,15 @@ extension SettingsViewController: UITextFieldDelegate {
             } else {
                 person.lastname = newValue
             }
-        } else if textField == ageTextField {
-            guard let numberValue = Float(newValue), numberValue > 0 else {
+        case ageTextField:
+            guard let numberValue = Int(newValue), numberValue > 0, numberValue < 100 else {
                 showAlert(with: "Incorrect value", and: "Please, enter your age")
                 ageTextField.text = ""
                 return
             }
             person.age = Int(newValue) ?? 0
-        } else {
-            guard let numberValue = Float(newValue), numberValue > 0 else {
+        default:
+            guard let numberValue = Int(newValue), numberValue > 0, numberValue < 300 else {
                 showAlert(with: "Incorrect value", and: "Please, enter your height")
                 heightTextField.text = ""
                 return
