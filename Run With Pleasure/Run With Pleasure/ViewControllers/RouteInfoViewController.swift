@@ -24,6 +24,10 @@ class RouteInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateInfo()
+    }
+    
+    private func updateInfo() {
         title = route.title
         
         routeOnMap.image = UIImage(named: route.title)
@@ -52,14 +56,8 @@ class RouteInfoViewController: UIViewController {
     
     private func showAlert() {
         let refreshAlert = UIAlertController(title: "Внимание!", message: "Вы действительно хотите добавить маршрут \(route.title)?", preferredStyle: UIAlertController.Style.alert)
-
-        refreshAlert.addAction(UIAlertAction(title: "Да", style: .default, handler: { (action: UIAlertAction!) in
-              print("Handle Ok logic here")
-        }))
-
-        refreshAlert.addAction(UIAlertAction(title: "Нет", style: .cancel, handler: { (action: UIAlertAction!) in
-              print("Handle Cancel Logic here")
-        }))
+        refreshAlert.addAction(UIAlertAction(title: "Да", style: .default))
+        refreshAlert.addAction(UIAlertAction(title: "Нет", style: .cancel))
 
         present(refreshAlert, animated: true, completion: nil)
     }
