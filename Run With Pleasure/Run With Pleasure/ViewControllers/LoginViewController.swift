@@ -65,14 +65,12 @@ extension LoginViewController {
         guard let viewControllers = tabBarController.viewControllers else { return }
         
         for viewController in viewControllers {
-            guard let navigationVC = viewController as? UINavigationController else { return }
+            guard viewController is UINavigationController else { return }
             if let personVC = viewController as? PersonViewController {
                 personVC.user = user
             } else if let cityListVC = viewController as? CityListViewController {
                 cityListVC.user = user
-            } else if let developersInfoVC = viewController as? DevelopersInfoViewController {
-                developersInfoVC.user = user
-            }
+            } 
         }
     }
 }
