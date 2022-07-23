@@ -195,7 +195,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="0ef-5X-5H8">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="145"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Баранчук Александр" translatesAutoresizingMaskIntoConstraints="NO" id="wmy-SJ-qXf">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Баранчук Александр" translatesAutoresizingMaskIntoConstraints="NO" id="wmy-SJ-qXf">
                                                 <rect key="frame" x="0.0" y="0.0" width="144.5" height="145"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="wmy-SJ-qXf" secondAttribute="height" multiplier="1:1" id="YdU-d5-Vzo"/>
@@ -223,7 +223,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="P8E-SK-7o1">
                                         <rect key="frame" x="0.0" y="153" width="359" height="145"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Журавлев Дмитрий" translatesAutoresizingMaskIntoConstraints="NO" id="eZf-iI-62x">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Журавлев Дмитрий" translatesAutoresizingMaskIntoConstraints="NO" id="eZf-iI-62x">
                                                 <rect key="frame" x="0.0" y="0.0" width="144.5" height="145"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="eZf-iI-62x" secondAttribute="height" multiplier="1:1" id="LCd-5e-9xT"/>
@@ -251,7 +251,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="6U1-zk-opb">
                                         <rect key="frame" x="0.0" y="306" width="359" height="145"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Павел Наумов" translatesAutoresizingMaskIntoConstraints="NO" id="V3t-ct-enx">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Павел Наумов" translatesAutoresizingMaskIntoConstraints="NO" id="V3t-ct-enx">
                                                 <rect key="frame" x="0.0" y="0.0" width="144.5" height="145"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="V3t-ct-enx" secondAttribute="height" multiplier="1:1" id="cdM-Bi-JrC"/>
@@ -260,7 +260,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pqa-Ut-MqQ">
                                                 <rect key="frame" x="166.5" y="45" width="192.5" height="54.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Павел Наумов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FH4-td-9aQ">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Наумов Павел" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FH4-td-9aQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="192.5" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
@@ -279,7 +279,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="U8w-IZ-59n">
                                         <rect key="frame" x="0.0" y="459" width="359" height="145"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Турчак Вячеслав" translatesAutoresizingMaskIntoConstraints="NO" id="wPZ-Mz-mzm">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Турчак Вячеслав" translatesAutoresizingMaskIntoConstraints="NO" id="wPZ-Mz-mzm">
                                                 <rect key="frame" x="0.0" y="0.0" width="144.5" height="145"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="wPZ-Mz-mzm" secondAttribute="height" multiplier="1:1" id="pDO-MF-lgE"/>

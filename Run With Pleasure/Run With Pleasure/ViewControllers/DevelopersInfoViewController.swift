@@ -11,10 +11,10 @@ class DevelopersInfoViewController: UIViewController {
 
     @IBOutlet var devImages: [UIImageView]!
     
-    override func viewWillLayoutSubviews() {
+    override func viewDidAppear(_ animated: Bool) {
         for devImage in devImages {
-            devImage.layer.masksToBounds = true
-            devImage.layer.cornerRadius = devImage.frame.size.width/2
+            devImage.layer.cornerRadius = devImage.frame.size.width / 2;
+            devImage.clipsToBounds = true;
         }
     }
 }
