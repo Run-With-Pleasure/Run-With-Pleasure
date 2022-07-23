@@ -190,28 +190,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="V5b-O1-ad9">
-                                <rect key="frame" x="27.5" y="146" width="359" height="604"/>
+                                <rect key="frame" x="20.5" y="146" width="373" height="604"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="0ef-5X-5H8">
-                                        <rect key="frame" x="0.0" y="0.0" width="359" height="145"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="145"/>
                                         <subviews>
                                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Баранчук Александр" translatesAutoresizingMaskIntoConstraints="NO" id="wmy-SJ-qXf">
-                                                <rect key="frame" x="0.0" y="0.0" width="144.5" height="145"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="wmy-SJ-qXf" secondAttribute="height" multiplier="1:1" id="YdU-d5-Vzo"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="wT0-fY-26O">
-                                                <rect key="frame" x="166.5" y="46" width="192.5" height="53.5"/>
+                                                <rect key="frame" x="167" y="46" width="206" height="53.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Баранчук Александр" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ie6-03-Aan">
-                                                        <rect key="frame" x="0.0" y="0.0" width="192.5" height="24"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="206" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GitHub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6i6-Ak-rhg">
-                                                        <rect key="frame" x="0.0" y="33" width="192.5" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GitHub, About Us View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6i6-Ak-rhg">
+                                                        <rect key="frame" x="0.0" y="33" width="206" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -221,25 +221,25 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="P8E-SK-7o1">
-                                        <rect key="frame" x="0.0" y="153" width="359" height="145"/>
+                                        <rect key="frame" x="0.0" y="153" width="373" height="145"/>
                                         <subviews>
-                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Журавлев Дмитрий" translatesAutoresizingMaskIntoConstraints="NO" id="eZf-iI-62x">
-                                                <rect key="frame" x="0.0" y="0.0" width="144.5" height="145"/>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Журавлев Дмитрий" translatesAutoresizingMaskIntoConstraints="NO" id="eZf-iI-62x">
+                                                <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="eZf-iI-62x" secondAttribute="height" multiplier="1:1" id="LCd-5e-9xT"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OiD-vb-0Fn">
-                                                <rect key="frame" x="166.5" y="45.5" width="192.5" height="54.5"/>
+                                                <rect key="frame" x="167" y="45.5" width="206" height="54.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Журавлев Дмитрий" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bms-J5-cDV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="192.5" height="24"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="206" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3a-WT-ywi">
-                                                        <rect key="frame" x="0.0" y="34" width="192.5" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3a-WT-ywi">
+                                                        <rect key="frame" x="0.0" y="34" width="206" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -249,25 +249,25 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="6U1-zk-opb">
-                                        <rect key="frame" x="0.0" y="306" width="359" height="145"/>
+                                        <rect key="frame" x="0.0" y="306" width="373" height="145"/>
                                         <subviews>
                                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Павел Наумов" translatesAutoresizingMaskIntoConstraints="NO" id="V3t-ct-enx">
-                                                <rect key="frame" x="0.0" y="0.0" width="144.5" height="145"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="V3t-ct-enx" secondAttribute="height" multiplier="1:1" id="cdM-Bi-JrC"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pqa-Ut-MqQ">
-                                                <rect key="frame" x="166.5" y="45" width="192.5" height="54.5"/>
+                                                <rect key="frame" x="167" y="45" width="206" height="54.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Наумов Павел" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FH4-td-9aQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="192.5" height="24"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="206" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noL-OB-yB7">
-                                                        <rect key="frame" x="0.0" y="34" width="192.5" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Routes Tab" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noL-OB-yB7">
+                                                        <rect key="frame" x="0.0" y="34" width="206" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -277,25 +277,25 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="U8w-IZ-59n">
-                                        <rect key="frame" x="0.0" y="459" width="359" height="145"/>
+                                        <rect key="frame" x="0.0" y="459" width="373" height="145"/>
                                         <subviews>
                                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Турчак Вячеслав" translatesAutoresizingMaskIntoConstraints="NO" id="wPZ-Mz-mzm">
-                                                <rect key="frame" x="0.0" y="0.0" width="144.5" height="145"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="wPZ-Mz-mzm" secondAttribute="height" multiplier="1:1" id="pDO-MF-lgE"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ctF-0y-oD3">
-                                                <rect key="frame" x="166.5" y="45" width="192.5" height="54.5"/>
+                                                <rect key="frame" x="167" y="45" width="206" height="54.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Турчак Вячеслав" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgN-II-xr7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="192.5" height="24"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="206" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7U9-9O-ntS">
-                                                        <rect key="frame" x="0.0" y="34" width="192.5" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Person View, Settings View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7U9-9O-ntS">
+                                                        <rect key="frame" x="0.0" y="34" width="206" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -413,7 +413,7 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="swift" catalog="system" width="128" height="113"/>
         <image name="Баранчук Александр" width="1500" height="1500"/>
-        <image name="Журавлев Дмитрий" width="959" height="959"/>
+        <image name="Журавлев Дмитрий" width="959" height="959"/>
         <image name="Павел Наумов" width="1280" height="1280"/>
         <image name="Турчак Вячеслав" width="853" height="853"/>
         <systemColor name="systemBackgroundColor">
