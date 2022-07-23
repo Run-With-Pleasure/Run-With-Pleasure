@@ -9,9 +9,12 @@ import UIKit
 
 class DevelopersInfoViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-       
+    @IBOutlet var devImages: [UIImageView]!
+    
+    override func viewWillLayoutSubviews() {
+        for devImage in devImages {
+            devImage.layer.masksToBounds = true
+            devImage.layer.cornerRadius = devImage.frame.size.width/2
+        }
     }
 }
