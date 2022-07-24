@@ -13,11 +13,12 @@
 		A9CB6E67286D4C6F00F7D440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CB6E65286D4C6F00F7D440 /* Main.storyboard */; };
 		A9CB6E69286D4C7000F7D440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CB6E68286D4C7000F7D440 /* Assets.xcassets */; };
 		A9CB6E6C286D4C7000F7D440 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CB6E6A286D4C7000F7D440 /* LaunchScreen.storyboard */; };
-		E6240242286D765000EECF2D /* CityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6240241286D765000EECF2D /* CityListViewController.swift */; };
+		E6240242286D765000EECF2D /* RoutesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6240241286D765000EECF2D /* RoutesListViewController.swift */; };
 		E6240244286D766A00EECF2D /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6240243286D766A00EECF2D /* PersonViewController.swift */; };
-		E6240246286D767C00EECF2D /* RoutesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6240245286D767C00EECF2D /* RoutesListViewController.swift */; };
 		E6240248286D769100EECF2D /* RouteInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6240247286D769100EECF2D /* RouteInfoViewController.swift */; };
 		E624024A286D76A000EECF2D /* DevelopersInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6240249286D76A000EECF2D /* DevelopersInfoViewController.swift */; };
+		E6333D29286D7F940049A71D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6333D28286D7F940049A71D /* Route.swift */; };
+		E6333D2B286D92540049A71D /* CitysListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6333D2A286D92540049A71D /* CitysListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +30,12 @@
 		A9CB6E68286D4C7000F7D440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9CB6E6B286D4C7000F7D440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9CB6E6D286D4C7000F7D440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E6240241286D765000EECF2D /* CityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewController.swift; sourceTree = "<group>"; };
+		E6240241286D765000EECF2D /* RoutesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesListViewController.swift; sourceTree = "<group>"; };
 		E6240243286D766A00EECF2D /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
-		E6240245286D767C00EECF2D /* RoutesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesListViewController.swift; sourceTree = "<group>"; };
 		E6240247286D769100EECF2D /* RouteInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteInfoViewController.swift; sourceTree = "<group>"; };
 		E6240249286D76A000EECF2D /* DevelopersInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersInfoViewController.swift; sourceTree = "<group>"; };
+		E6333D28286D7F940049A71D /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		E6333D2A286D92540049A71D /* CitysListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitysListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				E624023F286D75E700EECF2D /* ViewControllers */,
 				E624023E286D75DB00EECF2D /* Storyboards */,
+				E6333D27286D7F7F0049A71D /* Models */,
 				E624023D286D75D400EECF2D /* App */,
 				E6240240286D762D00EECF2D /* Resourses */,
 			);
@@ -99,8 +102,8 @@
 				A9CB6E63286D4C6F00F7D440 /* LoginViewController.swift */,
 				E6240243286D766A00EECF2D /* PersonViewController.swift */,
 				E6240249286D76A000EECF2D /* DevelopersInfoViewController.swift */,
-				E6240241286D765000EECF2D /* CityListViewController.swift */,
-				E6240245286D767C00EECF2D /* RoutesListViewController.swift */,
+				E6333D2A286D92540049A71D /* CitysListViewController.swift */,
+				E6240241286D765000EECF2D /* RoutesListViewController.swift */,
 				E6240247286D769100EECF2D /* RouteInfoViewController.swift */,
 			);
 			path = ViewControllers;
@@ -112,6 +115,14 @@
 				A9CB6E68286D4C7000F7D440 /* Assets.xcassets */,
 			);
 			path = Resourses;
+			sourceTree = "<group>";
+		};
+		E6333D27286D7F7F0049A71D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6333D28286D7F940049A71D /* Route.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,13 +196,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6333D29286D7F940049A71D /* Route.swift in Sources */,
 				E6240244286D766A00EECF2D /* PersonViewController.swift in Sources */,
 				A9CB6E64286D4C6F00F7D440 /* LoginViewController.swift in Sources */,
-				E6240246286D767C00EECF2D /* RoutesListViewController.swift in Sources */,
 				A9CB6E60286D4C6F00F7D440 /* AppDelegate.swift in Sources */,
 				A9CB6E62286D4C6F00F7D440 /* SceneDelegate.swift in Sources */,
 				E624024A286D76A000EECF2D /* DevelopersInfoViewController.swift in Sources */,
-				E6240242286D765000EECF2D /* CityListViewController.swift in Sources */,
+				E6240242286D765000EECF2D /* RoutesListViewController.swift in Sources */,
+				E6333D2B286D92540049A71D /* CitysListViewController.swift in Sources */,
 				E6240248286D769100EECF2D /* RouteInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
