@@ -54,7 +54,7 @@ extension SettingsViewController: UITextFieldDelegate {
         switch textField {
         case nameTextField:
             if Float(newValue) != nil {
-                showAlert(with: "Incorrect value", and: "Please, enter your name")
+                showAlert(with: "Неверное значение", and: "Пожалуйста, введите ваше имя")
                 nameTextField.text = ""
                 return
             } else {
@@ -62,7 +62,7 @@ extension SettingsViewController: UITextFieldDelegate {
             }
         case lastNameTextField:
             if Float(newValue) != nil {
-                showAlert(with: "Incorrect value", and: "Please, enter your lastname")
+                showAlert(with: "Неверное значение", and: "Пожалуйста, введите вашу фамилию")
                 lastNameTextField.text = ""
                 return
             } else {
@@ -70,14 +70,14 @@ extension SettingsViewController: UITextFieldDelegate {
             }
         case ageTextField:
             guard let numberValue = Int(newValue), numberValue > 0, numberValue < 100 else {
-                showAlert(with: "Incorrect value", and: "Please, enter your age")
+                showAlert(with: "Неверное значение", and: "Пожалуйста, введите ваш возраст")
                 ageTextField.text = ""
                 return
             }
             person.age = Int(newValue) ?? 0
         default:
             guard let numberValue = Int(newValue), numberValue > 0, numberValue < 300 else {
-                showAlert(with: "Incorrect value", and: "Please, enter your height")
+                showAlert(with: "Неверное значение", and: "Пожалуйста, введите ваш рост")
                 heightTextField.text = ""
                 return
             }
@@ -106,7 +106,7 @@ extension SettingsViewController {
     
     private func showAlert(with title: String, and massage: String) {
         let alert = UIAlertController(title: title, message: massage, preferredStyle: .alert)
-        let returnAction = UIAlertAction(title: "Return", style: .cancel) { _ in
+        let returnAction = UIAlertAction(title: "Вернуться", style: .cancel) { _ in
         }
         alert.addAction(returnAction)
         present(alert, animated: true)

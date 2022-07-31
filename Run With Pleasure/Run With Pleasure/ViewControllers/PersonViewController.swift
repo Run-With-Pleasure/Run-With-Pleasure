@@ -37,14 +37,14 @@ class PersonViewController: UIViewController {
     
     func updateInfo() {
         photoView.image = UIImage(named: person.photo)
-        ageLabel.text = "Your age is \(person.age)"
-        heightLabel.text = "Your height is \(person.height) сm"
-        distanceLabel.text = "You've run \(person.distance) km"
+        ageLabel.text = "Ваш возраст \(person.age)"
+        heightLabel.text = "Ваш рост \(person.height) см"
+        distanceLabel.text = "Вы пробежали \(person.distance) км"
         
         if person.fullName == " " {
-            navigationItem.title = "Hello, runner!"
+            navigationItem.title = "Привет, спортсмен!"
         } else {
-            navigationItem.title = "Hello, \(person.fullName)!"
+            navigationItem.title = "Привет, \(person.fullName)!"
         }
     }
 }
