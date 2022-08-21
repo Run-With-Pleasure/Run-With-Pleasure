@@ -63,14 +63,10 @@ extension LoginViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarController = segue.destination as? UITabBarController else { return }
         guard let viewControllers = tabBarController.viewControllers else { return }
-        
         for viewController in viewControllers {
-            guard viewController is UINavigationController else { return }
-            if let personVC = viewController as? PersonViewController {
-                personVC.user = user
-            } else if let cityListVC = viewController as? CitysListViewController {
-                cityListVC.user = user
-            }
+            guard let navigationVC = viewController as? UINavigationController else { return }
+            guard let personVC = navigationVC.topViewController as? PersonViewController else { return }
+            personVC.person = user.person
         }
     }
 }

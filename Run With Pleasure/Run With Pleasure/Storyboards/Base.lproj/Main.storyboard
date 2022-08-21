@@ -148,6 +148,9 @@
                     <navigationItem key="navigationItem" id="xDB-7D-39Q">
                         <barButtonItem key="rightBarButtonItem" title="Изменить" id="hL8-sh-KSs">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="ia8-F5-mxs" kind="presentation" id="7gc-A1-97x"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -293,83 +296,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPI-k9-wk1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2535" y="2140"/>
-        </scene>
-        <!--Настройки-->
-        <scene sceneID="7Dc-kb-dbZ">
-            <objects>
-                <viewController id="g3H-Yz-KtZ" customClass="SettingsViewController" customModule="Run_With_Pleasure" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="byK-Cm-wnQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите информацию" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhv-qZ-l5q">
-                                <rect key="frame" x="20" y="84" width="374" height="32.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="Jjb-bH-9rM">
-                                <rect key="frame" x="40" y="156.5" width="334" height="229"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="anj-Yd-6j2">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bnA-bx-0Vk">
-                                        <rect key="frame" x="0.0" y="65" width="334" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Возраст" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="atV-up-ThJ">
-                                        <rect key="frame" x="0.0" y="130" width="334" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Рост" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c0g-aD-gL3">
-                                        <rect key="frame" x="0.0" y="195" width="334" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                    </textField>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Cfx-tB-SNE"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Jjb-bH-9rM" firstAttribute="top" secondItem="Fhv-qZ-l5q" secondAttribute="bottom" constant="40" id="2ab-cd-Jh2"/>
-                            <constraint firstItem="Fhv-qZ-l5q" firstAttribute="top" secondItem="Cfx-tB-SNE" secondAttribute="top" constant="40" id="5Tv-Uw-tew"/>
-                            <constraint firstItem="Jjb-bH-9rM" firstAttribute="centerX" secondItem="byK-Cm-wnQ" secondAttribute="centerX" id="AFq-Hd-bOL"/>
-                            <constraint firstItem="Jjb-bH-9rM" firstAttribute="leading" secondItem="Cfx-tB-SNE" secondAttribute="leading" constant="40" id="b4d-0x-IXK"/>
-                            <constraint firstItem="Fhv-qZ-l5q" firstAttribute="leading" secondItem="Cfx-tB-SNE" secondAttribute="leading" constant="20" id="dgs-AJ-O8h"/>
-                            <constraint firstItem="Cfx-tB-SNE" firstAttribute="trailing" secondItem="Fhv-qZ-l5q" secondAttribute="trailing" constant="20" id="qO3-k5-5eD"/>
-                            <constraint firstItem="Cfx-tB-SNE" firstAttribute="trailing" secondItem="Jjb-bH-9rM" secondAttribute="trailing" constant="40" id="tBT-Jy-Udl"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Настройки" id="kR9-DZ-icW">
-                        <barButtonItem key="leftBarButtonItem" title="Отмена" id="KSU-Yh-zSi">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="cancelButtonPressed:" destination="g3H-Yz-KtZ" id="bAD-KX-Hj9"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Сохранить" id="QL8-r6-u6d">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="saveButtonPressed:" destination="g3H-Yz-KtZ" id="yyh-D8-Ew7"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="ageTextField" destination="atV-up-ThJ" id="dpk-dQ-3kS"/>
-                        <outlet property="heightTextField" destination="c0g-aD-gL3" id="Fjw-mn-jas"/>
-                        <outlet property="lastNameTextField" destination="bnA-bx-0Vk" id="ijj-Pr-Y9V"/>
-                        <outlet property="nameTextField" destination="anj-Yd-6j2" id="reY-JW-Poi"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9o9-lA-Pav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1793" y="3607"/>
         </scene>
         <!--Routes list-->
         <scene sceneID="XMH-xr-DNu">
@@ -662,6 +588,101 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0li-8u-8E8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2535" y="2828"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NXw-Qd-vtg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ia8-F5-mxs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="duF-Vx-lHQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Wec-Fe-1FI" kind="relationship" relationship="rootViewController" id="Ykz-gs-Drs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bwF-x5-CUh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1793" y="2803"/>
+        </scene>
+        <!--Настройки-->
+        <scene sceneID="fKf-Pv-r2c">
+            <objects>
+                <viewController id="Wec-Fe-1FI" customClass="SettingsViewController" customModule="Run_With_Pleasure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Ae-Gh-sk7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите информацию" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0C-yC-aUU">
+                                <rect key="frame" x="20" y="96" width="374" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="PAx-uY-C9F">
+                                <rect key="frame" x="40" y="168.5" width="334" height="229"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3wn-fm-hJK">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WPd-60-yNL">
+                                        <rect key="frame" x="0.0" y="65" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Возраст" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jRK-Ep-ggE">
+                                        <rect key="frame" x="0.0" y="130" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Рост" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="quN-0j-7CA">
+                                        <rect key="frame" x="0.0" y="195" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QzL-Ol-zye"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PAx-uY-C9F" firstAttribute="top" secondItem="e0C-yC-aUU" secondAttribute="bottom" constant="40" id="C2s-Px-mz6"/>
+                            <constraint firstItem="e0C-yC-aUU" firstAttribute="top" secondItem="QzL-Ol-zye" secondAttribute="top" constant="40" id="Pq3-Qy-x4f"/>
+                            <constraint firstItem="PAx-uY-C9F" firstAttribute="leading" secondItem="QzL-Ol-zye" secondAttribute="leading" constant="40" id="TlJ-Cm-I0n"/>
+                            <constraint firstItem="QzL-Ol-zye" firstAttribute="trailing" secondItem="PAx-uY-C9F" secondAttribute="trailing" constant="40" id="gHq-7B-7rc"/>
+                            <constraint firstItem="QzL-Ol-zye" firstAttribute="trailing" secondItem="e0C-yC-aUU" secondAttribute="trailing" constant="20" id="gIy-xS-6SM"/>
+                            <constraint firstItem="e0C-yC-aUU" firstAttribute="leading" secondItem="QzL-Ol-zye" secondAttribute="leading" constant="20" id="is7-fm-rt7"/>
+                            <constraint firstItem="PAx-uY-C9F" firstAttribute="centerX" secondItem="3Ae-Gh-sk7" secondAttribute="centerX" id="jiZ-wd-0kW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Настройки" id="n4F-K0-9hA">
+                        <barButtonItem key="leftBarButtonItem" title="Отмена" id="qtZ-vC-KMm">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="Wec-Fe-1FI" id="2zq-89-bfe"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Сохранить" id="Dwb-LM-fTO">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="Wec-Fe-1FI" id="nCH-SZ-7MC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ageTextField" destination="jRK-Ep-ggE" id="ezb-bT-Riw"/>
+                        <outlet property="heightTextField" destination="quN-0j-7CA" id="ons-kG-abK"/>
+                        <outlet property="lastNameTextField" destination="WPd-60-yNL" id="Vcd-5T-gEA"/>
+                        <outlet property="nameTextField" destination="3wn-fm-hJK" id="fEc-XN-L4r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wyG-RP-JlK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1793" y="3465"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
