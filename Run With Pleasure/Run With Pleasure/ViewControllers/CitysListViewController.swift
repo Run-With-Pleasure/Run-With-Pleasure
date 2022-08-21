@@ -9,6 +9,8 @@ import UIKit
 
 class CitysListViewController: UITableViewController {
     
+    var user: User!
+    
     private let citys = City.getCityList()
     
     override func viewDidLoad() {
